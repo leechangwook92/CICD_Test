@@ -64,5 +64,5 @@ jobs:
           --application-name cicdtest
           --deployment-group-name cicdtest
           --file-exists-behavior OVERWRITE
-          --s3-location bucket=forcicdtest,bundleType=zip,key=wef.zip
+          --s3-location bucket=forcicdtest,bundleType=zip,key=cicdtest.zip
           --region us-east-1

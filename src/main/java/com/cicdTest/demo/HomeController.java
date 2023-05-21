@@ -12,4 +12,11 @@ public class HomeController {
         return "index.html";
     }
 
+    @GetMapping("/hi2")
+    public String home2() {
+        return "index.html";
+    }
+
+
+
 }

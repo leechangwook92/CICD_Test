@@ -42,7 +42,7 @@ jobs:
         shell: bash
 
       - name: Make zip file
-        run: zip -r ./wef.zip .
+        run: zip -r ./cicdtest.zip .
         shell: bash
 
       - name: Configure AWS credentials
@@ -53,7 +53,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Upload to S3
-        run: aws s3 cp --region us-east-1 ./wef.zip s3://$S3_BUCKET_NAME/
+        run: aws s3 cp --region us-east-1 ./cicdtest.zip s3://$S3_BUCKET_NAME/
 
 
       # Deploy
@@ -63,8 +63,8 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run:
           aws deploy create-deployment
-          --application-name wef
-          --deployment-group-name wef-group
+          --application-name cicdtest
+          --deployment-group-name cicdtest
           --file-exists-behavior OVERWRITE
           --s3-location bucket=forcicdtest,bundleType=zip,key=wef.zip
           --region us-east-1

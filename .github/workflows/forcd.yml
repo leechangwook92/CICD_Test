@@ -2,7 +2,7 @@ name: CI/CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 env:
   S3_BUCKET_NAME: forcicdtest

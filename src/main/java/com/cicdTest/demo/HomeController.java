@@ -10,7 +10,12 @@ public class HomeController {
 
     @GetMapping("/hi")
     public String home() {
-        return "/resources/templates/index.html";
+        return "index.html";
+    }
+
+    @GetMapping("/answer")
+    public String please() {
+        return "응답해!";
     }
 
     @GetMapping("/hi2")

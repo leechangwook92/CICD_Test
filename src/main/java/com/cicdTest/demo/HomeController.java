@@ -15,7 +15,7 @@ public class HomeController {
 
     @GetMapping("/answer")
     public String please() {
-        return "응답해!";
+        return "응답해랏";
     }
 
     @GetMapping("/hi2")
@@ -23,7 +23,5 @@ public class HomeController {
     public String home2() {
         return "index.html";
     }
-
-
 
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPOSITORY=/home/ubuntu/moduform
+REPOSITORY=/home/ubuntu/CICD_Test
 cd $REPOSITORY
 
 APP_NAME=moduform

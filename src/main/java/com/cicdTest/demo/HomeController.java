@@ -15,6 +15,7 @@ public class HomeController {
     }
 
     @GetMapping("/answer")
+    @ResponseBody
     public String please() {
         return "응답해랏";
     }

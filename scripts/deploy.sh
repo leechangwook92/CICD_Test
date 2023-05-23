@@ -3,7 +3,7 @@
 REPOSITORY=/home/ubuntu/CICD_Test
 cd $REPOSITORY
 
-APP_NAME=moduform
+APP_NAME=CICD_Test
 JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep 'SNAPSHOT.war' | tail -n 1)
 JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
 
@@ -15,7 +15,7 @@ then
 else
   echo "> kill -9 $CURRENT_PID"
   kill -15 $CURRENT_PID
-  sleep 5
+  sleep 3
 fi
 
 echo "> Deploy - $JAR_PATH "

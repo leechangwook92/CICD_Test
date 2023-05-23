@@ -19,8 +19,8 @@ permissions:
 env:
   PROJECT_NAME: CICD_Test
   BUCKET_NAME: s3cicdtest
-  CODE_DEPLOY_APP_NAME: cicdtester
-  DEPLOYMENT_GROUP_NAME: cicdtester_group
+  CODE_DEPLOY_APP_NAME: cicdtesterdeploy
+  DEPLOYMENT_GROUP_NAME: cicdtesterdeploy-group
 
 jobs:
   build:

@@ -9,12 +9,12 @@ public class HomeController {
 
 
     @GetMapping("/hi")
-    @ResponseBody
     public String home() {
-        return "hi";
+        return "/resources/templates/index.html";
     }
 
     @GetMapping("/hi2")
+    @ResponseBody
     public String home2() {
         return "index.html";
     }
